@@ -12,11 +12,8 @@ exports.config = {
 
   api: {
     'default': {
-      host: 'api.github.com',
-      protocol: 'https'
-    },
-    'travis-ci': {
-      host: 'api.travis-ci.org',
+      host: 'localhost',
+      port: '2048',
       protocol: 'https'
     }
   },
