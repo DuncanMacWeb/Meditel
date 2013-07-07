@@ -1,0 +1,19 @@
+-	id:			&root
+	type:		prompt
+  	text: 		What is the suspected condition?
+	-	id:			&malaria
+		type:		response
+		text:		Malaria
+		-	type:		prompt
+			text:		Do you have a history of malaria or are experiencing chills/fever/…..?
+			-	type:		response
+				text:		No
+				-	type:		redirect
+					to:			*dontknow
+	-	type:		response
+		text:		Pneumonia
+	-	type:		response
+		text:		Diarrhoea
+-	prompt:		&dontknow
+	text:		Sorry, we don't know about that.
+	next:		*root
