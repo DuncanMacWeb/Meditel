@@ -1,41 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+	<html lang="en">
 
-  <head>
-    <meta charset='utf-8'/>
-    <title>Meditel</title>
+		<head>
+			<meta charset='utf-8'/>
+			<title>Meditel</title>
 
-    <link href="/styles.css" media="screen" rel="stylesheet" type="text/css" />
-  </head>
+			<script type="text/javascript" src="/scripts/jquery.js"></script>
+			<script type="text/javascript" src="/scripts/jquery.bxslider.js"></script>
+			<script type="text/javascript" src="/scripts/bootstrap-collapse.js"></script>
+			<script>
+				var j = jQuery.noConflict();
+				j(document).ready(function () {
+					j('.slider1').bxSlider();
+			   
+				});
+			</script>
+			<link href="/styles.css" media="screen" rel="stylesheet" type="text/css" />
+		</head>
 
-  <body class="">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="/">Meditel</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
-            </ul>
-          </div>
-          <div class="loading-indicator">Loading&hellip;</div>
-        </div>
-      </div>
-    </div>
+		<body class="">	
+			<div class="container-narrow">
+				<div class="masthead">
+					<ul class="nav nav-pills pull-right">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<h1>Med<span class="turq">i</span><span class="thin">tel</span></h1>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="overlay">
+					<h2>Med<span class="turq">i</span><span class="thin">tel</span></h2>
+					<p class="lead">Meditel helps doctors and medical professionals in developing countries with diagnosis and treatment by providing key information on basic mobile phones.</p>
+					<a href="#" class="btn btn-primary">How?</a>
+					<a href="#" class="btn btn-info">Why?</a>
+					<a href="#" class="btn btn-success">Where?</a>
+				</div>
+				<div class="bx-overwrap">
+					<ul class="slider1">
+						<li><img src="/images/banner.png" title="this is the title" /></li>
+						<li><img src="/images/banner.png" /></li>	
+					</ul>
+				</div>
+				<div class="controls">
+					<div class="prev">
+						<a href="#">Prev</a>
+					</div>
+					<div class="next">
+						<a href="#">Next</a>
+					</div>
+				</div>
+			</div>
 
-    <section id=content class=container>
-      {{{body}}}
-    </section>
 
-    <script src="/mergedAssets.js"></script>
-    <script>
-    (function() {
-      var App = window.App = new (require('app/app'))({{json appData}});
-      App.bootstrapData({{json bootstrappedData}});
-      App.start();
-    })();
-    </script>
+			<section id=content class=container-fluid>
+				{{{body}}}
+			</section>
 
-  </body>
+			<div id="footer">
+				<div class="container-fluid">
+					<div class="span4">
+						<h4>Useful Links</h4>
+						<ul>
+							<li><a href="www.malariaconsortium.org">Malaria Consortium</a></li>
+							<li><a href="http://www.malariaconsortium.org/inscale/pages/about-inscale">inScale Project</a></li>
+							<li><a href="www.malariaconsortium.org">Malaria Consortium</a></li>
+							<li><a href="www.malariaconsortium.org">Malaria Consortium</a></li>
+						</ul>
+					</div>
+					<div class="span4">
 
-</html>
+					</div>
+					<div class="span4">
+
+					</div>
+					<div class="copyright"><p>{{copyright "2013"}}</p></div>
+				</div>
+			</div>
+
+			<script src="/mergedAssets.js"></script>
+			<script>
+				(function() {
+					var App = window.App = new (require('app/app'))({{json appData}});
+					App.bootstrapData({{json bootstrappedData}});
+					App.start();
+				})();
+			</script>
+		</body>
+
+	</html>

@@ -1,10 +1,8 @@
+@import 'vendor/bootstrap-responsive.css'
 @import 'vendor/bootstrap.min.css'
 @import 'base_view'
 
 body
-  background-color: whitesmoke
-  padding-top: 50px
-
   &.loading
     .loading-indicator
       display: block
@@ -14,3 +12,177 @@ body
   float: right
   color: white
   line-height: 40px
+
+/*DIIIIRTY*/
+.brand
+	display: none
+.container-narrow
+	width: 80%
+	margin:0 auto
+	
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px)
+	header 
+		
+
+/* Landscape phones and down */
+@media (max-width: 480px)
+	html
+		-webkit-text-size-adjust: 100%
+		-ms-text-size-adjust: 100%
+	#content
+		#globe
+			clear:left
+			float:none
+		.span6
+			width:100%
+		
+//NAV
+.nav
+	overflow:hidden
+	margin-left:20px
+.masthead
+	height:70px
+	ul
+		margin-bottom: 10px
+		margin-top: 5px
+//banner
+.banner
+	padding-top:30px
+// Header
+
+.overlay
+	max-width: 580px
+	margin: 0 auto
+	z-index: 1000
+	color: white
+	text-align: center
+	background-color: white
+	border: 1px solid #c6c6c6
+	position:relative
+	z-index: 1000
+	padding: 0 0 10px 0 
+	background: url('images/background-overlay.png') repeat 0 0 transparent
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+	h2
+		text-shadow: 1px 1px 3px #333;
+		font-size:42px
+	p
+		color:black
+//SLIDER
+.bx-overwrap
+	width: 960px
+	display: block
+	margin: 0 auto
+	z-index:10
+	.bx-wrapper
+		overflow: hidden
+		position: relative
+		margin-top: -260px;
+		
+		.bx-default-pager
+			display: none
+		.bx-controls
+			display:none
+.controls
+	display:block	
+	.prev
+		height:65px
+		width:50px
+		background:url('images/controls.png') no-repeat 0 -70px transparent
+		margin-top:200px
+		position:absolute
+		top:0
+		left:0
+		text-indent:-10000px
+	.prev:hover
+		background-position: 0 0
+	.next
+		height:65px
+		width:50px
+		background:url('images/controls.png') no-repeat -80px -65px transparent
+		margin-top:200px
+		position:absolute
+		top:0
+		right:0
+		text-indent:-10000px
+	.next:hover
+		background-position: -80px 0
+		
+//Content
+
+#content
+	display:block
+	background-color:#333
+	color:white
+	ul
+		li
+			padding-left:10px
+			background:url('images/triangle.png') no-repeat 0 -10px transparent
+			list-style:none
+			margin-bottom:12px
+#globe
+	padding-top:20px
+	img
+		float:right
+		margin:0 15% 20px 0
+		text-align:center
+		display:table-cell
+		vertical-align:middle
+	p
+		margin: 0 auto
+		text-align:center
+		width:70%
+		margin:0 auto
+		clear:both
+			
+//Footer
+#footer
+	width:100%
+	background-color:#00b7f3
+	color:whitesmoke
+	
+	.control-group
+		float:right
+
+//Fonts
+.thin
+	font-weight: 300
+.turq
+	color: #00b7f3
+.lead
+	padding:0 20px
+	font-weight:200
+.highlight
+	text-align:center
+	padding:10px
+	border:1px dashed #333
+	
+blockquote
+	font-weight:300
+	font-size:22px
+	color:#00b7f3
+.center
+	text-align:center
+.page-header
+	small
+		color: #00b7f3
+.chunk
+	background-color:white
+	border:3px solid #333
+	padding:20px
+	text-align:center
+	font-size:22px;
+	// -moz-border-radius: 10px 10px 10px 0
+	// -webkit-border-radius: 10px 10px
+	// border-radius:10px 10px
+.span12
+	.hero-unit
+		border-radius: 0 0 30px 30px
+		padding-top:30px
+		color:#333
+		h2
+			font-size:28px
+			
