@@ -1,8 +1,8 @@
 # Meditel
 
-[Meditel](http://hacks.rewiredstate.org/events/bmj/meditel-medical-decision-trees-on-basic-mobile-phones) helps health workers in the developing world diagnose and treat using basic mobile phones, by providing key info for medics in the developing world over [USSD](http://en.wikipedia.org/wiki/Unstructured_Supplementary_Service_Data).
+[Meditel](http://hacks.rewiredstate.org/events/bmj/meditel-medical-decision-trees-on-basic-mobile-phones) will help health workers in the developing world diagnose and treat using basic mobile phones, by providing key info for medics in the developing world over [USSD](http://en.wikipedia.org/wiki/Unstructured_Supplementary_Service_Data).
 
-It takes health workers through a decision tree through USSD messaging, using a concise question-and-answer format to diagnosis, treatment and/or referral.
+It will take health workers through a decision tree through USSD messaging, using a concise question-and-answer format to diagnosis, treatment and/or referral.
 
 Contributions are welcome, technical or otherwise. Pull requests, issues and tweets FTW.
 
